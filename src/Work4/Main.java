@@ -24,17 +24,17 @@ public class Main {
                 int num = a[i][j];
                 if (num < min) {
                     min = num;
-                    minRow = i;
-                    minCol = j;
+                    minRow = i + 1;
+                    minCol = j + 1;
                 }
                 if (num > max) {
                     max = num;
-                    maxRow = i;
-                    maxCol = j;
+                    maxRow = i + 1;
+                    maxCol = j + 1;
                 }
             }
         }
-        System.out.println("min: " + min + " row: " + minRow + " col: " + minCol);
-        System.out.println("max: " + max + " row: " + maxRow + " col: " + maxCol);
+        System.out.println("min: " + min + " 行: " + minRow + " 列: " + minCol);
+        System.out.println("max: " + max + " 行: " + maxRow + " 列: " + maxCol);
     }
 }
